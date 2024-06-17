@@ -68,7 +68,7 @@ const Hero = () => {
               words='Transforming Ideas into Interactive Web Applications'
       /> */}
 
-      <h1 id="mid"  className='opacity-0 -translate-y-4 dark:text-white my-4 font-bold text-black leading-snug tracking-wide text-center text-[40px] md:text-5xl lg:text-6xl blur'>Transforming Ideas into Interactive <span className='text-purple'>Web Applications</span>   </h1>
+      <h1 id="mid"  className='opacity-0 -translate-y-4 dark:text-white my-4 font-bold text-black leading-snug tracking-wide text-center text-[36px] md:text-5xl lg:text-6xl blur'>Transforming Ideas into Interactive <span className='text-purple'>Web Applications</span>   </h1>
 
 
     <p id="btm" className='blur -translate-y-6 opacity-0 text-center md:tracking-wider mb-4 text-sm md:text-large lg:text-2xl'>

@@ -1,11 +1,4 @@
-export const navItems = [
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Experience", link: "#experience" },
-    { name: "YouTube", link: "#youtube" },
-    { name: "Contact", link: "#contact" },
-  ];
-  
+
 export const skillItems = [
     {id:1,Img:"/re.svg"},
     {id:2,Img:"/next.svg"},
@@ -151,21 +144,4 @@ export const skillItems = [
     },
   ];
   
-  export const socialMedia = [
-    {
-      id: 1,
-      img: "/git.svg",
-    },
-    {
-      id: 2,
-      img: "/twit.svg",
-    },
-    {
-      id: 3,
-      img: "/link.svg",
-    },
-    {
-      id:4,
-      img:"/link.svg"
-    }
-  ];
+ 
