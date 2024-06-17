@@ -86,8 +86,19 @@ export const skillItems = [
   ];
   
   export const projects = [
+
     {
       id: 1,
+      title: "Apple Iphone clone",
+      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      img: "/apple.png",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      gitlink: "https://github.com/suhasledange/apple_web",
+      livlink: "https://apple-clone-webapp.vercel.app",
+    },
+
+    {
+      id: 2,
       title: "BookCafe",
       des: "BookCafe - Book Renting service made with nextjs and appwrite as backend as service.",
       img: "/bookcafe.webp",
@@ -96,16 +107,7 @@ export const skillItems = [
       livlink: "https://bookcafee.vercel.app/",
 
     },
-    {
-      id: 2,
-      title: "Ammunition Management System",
-      des: "Blockchain Based Ammunition Management System using nextjs and solidity with infura as a service.",
-      img: "/AMS.webp",
-      iconLists: ["/next.svg", "/tail.svg", "/solidity.svg", "/hardhat.svg"],
-      gitlink: "https://github.com/suhasledange/ams",
-      livlink: "https://ammosystem.vercel.app/",
 
-    },
     {
       id: 3,
       title: "Personal Portfolio",
@@ -116,15 +118,18 @@ export const skillItems = [
       livlink: "https://suhasledange.vercel.app",
 
     },
+    
     {
       id: 4,
-      title: "Apple Iphone clone",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/apple.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      gitlink: "https://github.com/suhasledange/apple_web",
-      livlink: "https://apple-clone-webapp.vercel.app",
+      title: "Ammunition Management System",
+      des: "Blockchain Based Ammunition Management System using nextjs and solidity with infura as a service.",
+      img: "/AMS.webp",
+      iconLists: ["/next.svg", "/tail.svg", "/solidity.svg", "/hardhat.svg"],
+      gitlink: "https://github.com/suhasledange/ams",
+      livlink: "https://ammosystem.vercel.app/",
+
     },
+    
   ];
   
   
