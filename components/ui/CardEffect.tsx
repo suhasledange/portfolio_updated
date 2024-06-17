@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { CardBody, CardContainer, CardItem } from "./3d-card";
+import { CardBody, CardContainer, CardItem } from "./3dcard";
 import Link from "next/link";
 import ShimmerButton from "./ShimmerButton";
 import { FaGithub } from "react-icons/fa";
