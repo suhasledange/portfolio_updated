@@ -90,7 +90,7 @@ export function ThreeDCardDemo(
             <ShimmerButton title="Github"
             icon={<FaGithub/>}
             position="left"
-            className="md:mt-0 md:w-36"
+            className="md:mt-3 md:w-36"
             />
           </CardItem>
         </div>
