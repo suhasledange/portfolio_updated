@@ -101,7 +101,7 @@ export const skillItems = [
       id: 2,
       title: "BookCafe",
       des: "BookCafe - Book Renting service made with nextjs and appwrite as backend as service.",
-      img: "/bookcafe.webp",
+      img: "/Bookcafe.webp",
       iconLists: ["/next.svg", "/tail.svg", "/appwrite.svg"],
       gitlink: "https://github.com/suhasledange/bookcafe",
       livlink: "https://bookcafee.vercel.app/",
