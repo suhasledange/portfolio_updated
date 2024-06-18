@@ -21,7 +21,7 @@ const Hero = () => {
 
       gsap.to('#mid',{
         opacity:1,
-        delay:0.,
+        delay:0.6,
         y:0,
         filter: 'blur(0px)', 
         duration: 0.6
