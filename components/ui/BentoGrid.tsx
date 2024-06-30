@@ -141,11 +141,12 @@ export const BentoGridItem = ({
             <Image className=" object-contain w-[130%] h-[130%]" src="/bass.png" alt="bass" width={500} height={500} />
             </div>
 
-              <div>
+              <div className=" flex flex-col items-center justify-start gap-4">
               <h2 className="text-md">Bass Town &bull; <span className="text-md font-normal">33.5k subscribers</span> </h2>
-              <Link href={link} target="__blank">
+
+              <Link className="w-full" href={link} target="__blank">
                 <ShimmerButton
-                className="md:mt-3"
+                className="md:mt-0"
                 title="Visit"
                 icon={<IoIosArrowRoundForward />}
                 position="right"
