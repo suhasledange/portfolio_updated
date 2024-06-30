@@ -16,7 +16,7 @@ export default function Home() {
     { name: "About",icon:<IoIosContact className="text-2xl"/>, link: "#about" },
     { name: "Projects",icon:<MdDeveloperMode className="text-2xl"/>, link: "#projects" },
     { name: "Experience",icon:<MdOutlineWorkOutline className="text-2xl"/>, link: "#experience" },
-    { name: "YouTube", icon:<CgYoutube className="text-2xl"/>,link: "#youtube" },
+    // { name: "YouTube", icon:<CgYoutube className="text-2xl"/>,link: "#youtube" },
     { name: "Contact",icon: <HiOutlineMail className="text-2xl"/>, link: "#contact" },
   ];
 

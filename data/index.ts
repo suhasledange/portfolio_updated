@@ -2,15 +2,14 @@
 export const skillItems = [
     {id:1,Img:"/re.svg"},
     {id:2,Img:"/next.svg"},
-    {id:3,Img:"/tail.svg"},
-    {id:4,Img:"/node.svg"},
-    {id:5,Img:"/express.svg"},
-    {id:6,Img:"/ts.svg"},
-    {id:7,Img:"/three.svg"},
-    {id:8,Img:"/gsap.svg"},
-    {id:9,Img:"/mongodb.svg"},
-    {id:10,Img:"/appwrite.svg"},
-
+    {id:3,Img:"/angular.svg"},
+    {id:4,Img:"/tail.svg"},
+    {id:5,Img:"/node.svg"},
+    {id:6,Img:"/express.svg"},
+    {id:7,Img:"/ts.svg"},
+    {id:8,Img:"/three.svg"},
+    {id:9,Img:"/gsap.svg"},
+    {id:10,Img:"/mongodb.svg"},
 
 ]
 
@@ -47,13 +46,14 @@ export const skillItems = [
     },
     {
       id: 4,
-      title: "Tech enthusiast with a passion for development.",
+      title: "Visit my youtube channel.",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-start",
       img: "/grid.svg",
       spareImg: "/b4.svg",
+      link:"https://www.youtube.com/channel/UC1ynsuU6XPZ2iWw1Gf9SHlQ"
     },
   
     {
@@ -103,13 +103,12 @@ export const skillItems = [
 
     {
       id: 3,
-      title: "Personal Portfolio",
-      des: "Modern Portfolio made using nextjs and acerternity UI",
-      img: "/portfolio.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/gsap.svg"],
-      gitlink: "https://github.com/suhasledange/Portfolio",
-      livlink: "https://suhasledange.vercel.app",
-
+      title: "Tasklist",
+      des: "Full stack tasklist web application for assigning task to specefic user.",
+      img: "/tasklist.png",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/mongodb.svg"],
+      gitlink: "https://github.com/suhasledange/tasklist",
+      livlink: "https://tasklistweb.vercel.app",
     },
     
     {

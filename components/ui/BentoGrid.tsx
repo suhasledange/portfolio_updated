@@ -12,6 +12,8 @@ import animationData from "@/data/confetti.json";
 import ShimmerButton from "./ShimmerButton";
 import { skillItems } from "@/data";
 import Image from "next/image";
+import Link from "next/link";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 export const BentoGrid = ({
   className,
@@ -41,6 +43,7 @@ export const BentoGridItem = ({
   imgClassName,
   titleClassName,
   spareImg,
+  link,
 }: {
   className?: string;
   id: number;
@@ -50,8 +53,9 @@ export const BentoGridItem = ({
   imgClassName?: string;
   titleClassName?: string;
   spareImg?: string;
+  link?:string;
 }) => {
-  const leftLists = ["ExpressJS", "ReactJS", "Typescript"];
+  const leftLists = ["ExpressJS", "ReactJS", "AngularJS"];
   const rightLists = ["NodeJS", "NextJS", "ThreeJS"];
 
   const [copied, setCopied] = useState(false);
@@ -130,6 +134,29 @@ export const BentoGridItem = ({
           >
             {title}
           </div>
+          {
+            link && <div className="mt-8 flex items-center justify-start gap-6">
+           
+            <div className="w-24 rounded-full h-24 overflow-hidden flex items-center justify-center">
+            <Image className=" object-contain w-[130%] h-[130%]" src="/bass.png" alt="bass" width={500} height={500} />
+            </div>
+
+              <div>
+              <h2 className="text-md">Bass Town &bull; <span className="text-md font-normal">33.5k subscribers</span> </h2>
+              <Link href={link} target="__blank">
+                <ShimmerButton
+                className="md:mt-3"
+                title="Visit"
+                icon={<IoIosArrowRoundForward />}
+                position="right"
+                otherClasses="!bg-[#161A31]"
+              />
+              </Link>
+
+          </div>
+              
+          </div>
+          }
         {
             id === 3 && <div className="flex items-center justify-center gap-8 flex-wrap max-w-sm mx-auto">
             
