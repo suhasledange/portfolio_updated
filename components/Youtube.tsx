@@ -8,7 +8,7 @@ const Youtube = () => {
     const {allVideos,loading} = useContext(YoutubeContext)
     const [currentPage, setCurrentPage] = useState(1);
     const videosPerPage = 9;
-    const videosSectionRef = useRef(null);
+    const videosSectionRef = useRef<HTMLHeadElement>(null);
 
   const totalPages = Math.ceil(allVideos.length / videosPerPage);
   const paginate = useCallback((action:any) => {
