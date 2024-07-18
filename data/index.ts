@@ -58,12 +58,12 @@ export const skillItems = [
   
     {
       id: 5,
-      title: "Currently building a Book Renting Application",
+      title: "Currently building a Tube Studio Application",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute opacity-50 right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/Bookcafe.webp",
+      img: "/code.png",
       spareImg: "/grid.svg",
     },
     {

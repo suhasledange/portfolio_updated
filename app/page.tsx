@@ -5,22 +5,25 @@ import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import { FloatingNav } from "@/components/ui/Floatingnavbar";
+import Youtube from "@/components/Youtube";
 import { CgYoutube } from "react-icons/cg";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoIosContact } from "react-icons/io";
 import { MdDeveloperMode, MdOutlineWorkOutline } from "react-icons/md";
-
+import YoutubeProvider from '../context/YoutubeProvider'
 export default function Home() {
 
   const navItems = [
     { name: "About",icon:<IoIosContact className="text-2xl"/>, link: "#about" },
     { name: "Projects",icon:<MdDeveloperMode className="text-2xl"/>, link: "#projects" },
     { name: "Experience",icon:<MdOutlineWorkOutline className="text-2xl"/>, link: "#experience" },
-    // { name: "YouTube", icon:<CgYoutube className="text-2xl"/>,link: "#youtube" },
+    { name: "YouTube", icon:<CgYoutube className="text-2xl"/>,link: "#youtube" },
     { name: "Contact",icon: <HiOutlineMail className="text-2xl"/>, link: "#contact" },
   ];
 
   return (
+    <YoutubeProvider>
+
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className=" max-w-7xl w-full">
         <FloatingNav 
@@ -30,8 +33,11 @@ export default function Home() {
         <Grid/>
         <Projects/>
         <Experience/>
+        <Youtube/>
         <Footer/>
       </div>
     </main>
+    </YoutubeProvider>
+
   );
 }

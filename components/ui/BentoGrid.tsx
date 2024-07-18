@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 import Lottie from "react-lottie";
@@ -14,6 +14,8 @@ import { skillItems } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import YoutubeContext from "@/context/YoutubeContext";
+import formatNumber from "@/utils/formatNumber";
 
 export const BentoGrid = ({
   className,
@@ -75,6 +77,9 @@ export const BentoGridItem = ({
     setCopied(true);
   };
 
+  const {channelData} = useContext(YoutubeContext)
+
+
   return (
     <div
       className={cn(
@@ -101,7 +106,7 @@ export const BentoGridItem = ({
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
+          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-90"
             } `}
         >
           {spareImg && (
@@ -141,8 +146,8 @@ export const BentoGridItem = ({
             <Image className=" object-contain w-[130%] h-[130%]" src="/bass.png" alt="bass" width={500} height={500} />
             </div>
 
-              <div className=" flex flex-col items-center justify-start gap-4">
-              <h2 className="text-md">Bass Town &bull; <span className="text-md font-normal">33.5k subscribers</span> </h2>
+              <div className=" flex flex-col items-center justify-start">
+              <h2 className="text-md">Bass Town &bull; <span className="text-md font-normal">{formatNumber(channelData?.subscriberCount)} subscribers</span> </h2>
 
               <Link className="w-full" href={link} target="__blank">
                 <ShimmerButton
