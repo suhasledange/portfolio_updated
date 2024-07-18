@@ -9,12 +9,24 @@ const YoutubeProvider = ({children}) => {
   const [loading, setLoading] = useState(true);
   const [channelData, setChannelData] = useState({});
 
-  const fetchVideosAndChannelData = async () => {
+
+  const fetchChannelData = async ()=>{
+
     try {
-      const [videoData, channelData] = await Promise.all([
-        fetchFromYoutube(),
-        fetchChannelYoutube()
-      ]);
+
+      const channelData = await fetchChannelYoutube();
+      if (channelData?.items) {
+        setChannelData(channelData.items[0]?.statistics || {});
+      }
+    } catch (error) {
+      console.error('Error fetching data from YouTube', error);
+    }
+
+  }
+
+  const fetchVideos = async () => {
+    try {
+      const videoData = await fetchFromYoutube();
 
       if (videoData?.items) {
         const videos = videoData.items.map((video) => ({
@@ -23,21 +35,17 @@ const YoutubeProvider = ({children}) => {
         }));
         setAllVideos(videos);
       }
-
-      if (channelData?.items) {
-        setChannelData(channelData.items[0]?.statistics || {});
-      }
       setLoading(false)
 
     } catch (error) {
       console.error('Error fetching data from YouTube', error);
       setLoading(false)
-
     }
   };
 
   useEffect(() => {
-    fetchVideosAndChannelData();
+    fetchChannelData();
+    fetchVideos()
   }, []);
 
   return (

@@ -53,7 +53,7 @@ const Youtube = () => {
          <div className='grid gap-5' style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))' }}>
         {
             Array.from({length:9},(_,index)=>(
-                <div key={index} className='bg-gray-800 custom-pulse h-[20rem]'>
+                <div key={index} className='bg-gray-900 custom-pulse h-[20rem]'>
             </div>
             ))
         }

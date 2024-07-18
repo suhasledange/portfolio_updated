@@ -46,7 +46,7 @@ const Footer = () => {
         <p className="text-white-200 md:mt-10 my-5 text-center">
         Let’s discuss how I can assist you in achieving your objectives.
         </p>
-        <a href="mailto:suhasledange10@gmail.com">
+        <a target="_blank" href="mailto:suhasledange10@gmail.com">
           <ShimmerButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
