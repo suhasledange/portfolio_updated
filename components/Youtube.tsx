@@ -4,6 +4,15 @@ import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import YoutubeCard from '../components/ui/YoutubeCard'
 import YoutubeContext from '@/context/YoutubeContext';
 const Youtube = () => {
+
+    type Video = {
+        snippet: {
+          title: string;
+          publishedAt: string;
+        };
+        Videolink: string;
+      };
+      
     
     const {allVideos,loading} = useContext(YoutubeContext)
     const [currentPage, setCurrentPage] = useState(1);
@@ -56,7 +65,7 @@ const Youtube = () => {
         <div className='grid gap-4' 
         style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))' }}
         >
-          {currentVideos.map((video, idx) => (
+          {currentVideos.map((video:Video, idx:number) => (
             <YoutubeCard
               key={idx}
               title={video.snippet.title}
