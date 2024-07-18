@@ -3,6 +3,7 @@ import React, { useCallback, useContext, useRef, useState } from 'react';
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import YoutubeCard from '../components/ui/YoutubeCard'
 import YoutubeContext from '@/context/YoutubeContext';
+import Loader from '../components/ui/Loader'
 const Youtube = () => {
 
     type Video = {
@@ -50,14 +51,18 @@ const Youtube = () => {
         <div  className='w-full mt-12 justify-items-center gap-10'>
 
         {loading ? (
-         <div className='grid gap-5' style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))' }}>
-        {
-            Array.from({length:9},(_,index)=>(
-                <div key={index} className='bg-gray-900 custom-pulse h-[20rem]'>
-            </div>
-            ))
-        }
 
+        //  <div className='grid gap-5' style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))' }}>
+        // {
+        //     Array.from({length:9},(_,index)=>(
+        //         <div key={index} className='bg-gray-900 custom-pulse h-[20rem]'>
+        //     </div>
+        //     ))
+        // }
+
+        // </div>
+        <div className='py-8'>
+            <Loader/>
         </div>
       
     ) : (

@@ -5,12 +5,11 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import { formatDistanceToNow, parseISO } from "date-fns";
 import Skeleton from "./Skeleton";
 const YoutubeCard = ({ title, link, publishedAt }) => {
-  const [isPlayerReady, setPlayerReady] = useState(false);
-
-
+  const [loading, setLoading] = useState(true);
   const playerStyle = {
     borderRadius: "6px",
     overflow: "hidden",
+    display: loading ? "none" : "block"
   };
 
   const dateObject = parseISO(publishedAt);
@@ -18,13 +17,15 @@ const YoutubeCard = ({ title, link, publishedAt }) => {
 
   return (
     <div className="flex flex-col flex-grow">
-      <div className="bg-black mx-auto p-4 rounded-md">
-      <div>
-            <ReactPlayer
+      <div className="bg-black mx-auto p-4 rounded-lg">
+      <div className="relative">
+        {loading && <Skeleton />} 
+          <ReactPlayer
             style={playerStyle}
             width="100%"
             height="100%"
             url={link}
+            onReady={() => setLoading(false)}
           />
         </div>
 
