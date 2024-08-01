@@ -80,18 +80,9 @@ export const skillItems = [
   
   export const projects = [
 
-    {
-      id: 1,
-      title: "Apple Iphone clone",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/apple.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      gitlink: "https://github.com/suhasledange/apple_web",
-      livlink: "https://apple-clone-webapp.vercel.app",
-    },
 
     {
-      id: 2,
+      id: 1,
       title: "BookCafe",
       des: "BookCafe - Book Renting service made with nextjs and appwrite as backend as service.",
       img: "/Bookcafe.webp",
@@ -102,17 +93,17 @@ export const skillItems = [
     },
 
     {
-      id: 3,
-      title: "Tasklist",
-      des: "Full stack tasklist web application for assigning task to specefic user.",
+      id: 2,
+      title: "Todo Manager",
+      des: "Full stack web application with authentication.",
       img: "/tasklist.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/mongodb.svg"],
-      gitlink: "https://github.com/suhasledange/tasklist",
-      livlink: "https://tasklistweb.vercel.app",
+      iconLists: ["/next.svg", "/tail.svg", "/mongodb.svg"],
+      gitlink: "https://github.com/suhasledange/taskapp",
+      livlink: "https://todonext-app.vercel.app/",
     },
-    
+
     {
-      id: 4,
+      id: 3,
       title: "Ammunition Management System",
       des: "Blockchain Based Ammunition Management System using nextjs and solidity with infura as a service.",
       img: "/AMS.webp",
@@ -121,6 +112,17 @@ export const skillItems = [
       livlink: "https://ammosystem.vercel.app/",
 
     },
+
+    {
+      id: 4,
+      title: "Apple Iphone clone",
+      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      img: "/apple.png",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      gitlink: "https://github.com/suhasledange/apple_web",
+      livlink: "https://apple-clone-webapp.vercel.app",
+    },
+
     
   ];
   
