@@ -72,7 +72,7 @@ const Hero = () => {
 
 
     <p id="btm" className='blur -translate-y-6 opacity-0 text-center md:tracking-wider mb-4 text-sm md:text-large lg:text-2xl'>
-      Hi, I&apos;m Suhas, a Front-end Developer
+      Hi, I&apos;m Suhas, a Full Stack Developer
     </p>
 
     <a className=' opacity-0 translate-y-20' id="hero" href="/SuhasLedangeResume.pdf" title="Download Resume" download="SuhasLedangeResume.pdf"> 
